@@ -1,10 +1,11 @@
+
 !!!
 %html
   %head
     %meta{:charset => 'utf-8'}
     %title "たいぷの達人"
     = stylesheet_link_tag 'bootstrap'
-    = javascript_include_tag 'jquery', 'jquery-ujs', 'bootstrap', 'underscore.min', 'backbone.min'
+    = javascript_include_tag 'jquery', 'jquery-ujs', 'bootstrap', 'underscore-min', 'backbone-min'
     - if content_for? :assets
       = yield_content :assets
   %body

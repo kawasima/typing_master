@@ -19,7 +19,7 @@ TypingMaster::App.controllers :typing do
   # end
   
   get :index do
-    render 'index'
+    render 'typing/index'
   end
 
 end

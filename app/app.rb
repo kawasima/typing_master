@@ -1,5 +1,6 @@
 module TypingMaster
   class App < Padrino::Application
+    register CoffeeInitializer
     register SassInitializer
     register Padrino::Rendering
     register Padrino::Mailer

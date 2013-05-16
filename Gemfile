@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # gemspec
 
 # Server requirements
-# gem 'thin' # or mongrel
+gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
 
 # Optional JSON codec (faster performance)
@@ -16,7 +16,9 @@ gem 'rake'
 # Component requirements
 gem 'sass'
 gem 'haml'
-gem 'dm-sqlite-adapter'
+gem 'rack-coffee', :require => "rack/coffee"
+gem 'coffee-script'
+gem 'dm-mysql-adapter'
 gem 'dm-validations'
 gem 'dm-timestamps'
 gem 'dm-migrations'
@@ -31,6 +33,7 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 
 # Padrino Stable Gem
 gem 'padrino', '0.11.0'
+gem 'tilt', '1.3.7'
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
